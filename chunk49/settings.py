@@ -108,17 +108,16 @@ WSGI_APPLICATION = 'chunk49.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'MnaCnXClxt3XJpmxkyQO',
-        'HOST': 'containers-us-west-40.railway.app',
-        'PORT': '7204',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Juliusokputu$default',
+        'USER': 'Juliusokputu',
+        'PASSWORD': 'victoriaegimi',
+        'HOST': 'Juliusokputu.mysql.pythonanywhere-services.com',
     }
 }
-import dj_database_url
-database_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(database_from_env)
+# import dj_database_url
+# database_from_env = dj_database_url.config(conn_max_age=600)
+# DATABASES['default'].update(database_from_env)
 
 AUTH_USER_MODEL='accounts.CustomUser'
 # Password validation
